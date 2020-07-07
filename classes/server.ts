@@ -7,7 +7,7 @@ import socketIO from 'socket.io';
 import cors from 'cors';
 
 import * as socket from '../sockets/socket';
-import routes from '../routes/routes'
+import routes from '../routes/routes';
 
 
 export default class Server {
