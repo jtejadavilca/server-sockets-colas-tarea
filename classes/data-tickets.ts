@@ -13,9 +13,12 @@ export default class DataTickets {
     getDia(): number {
         return this.dia;
     }
-    agregarNuevoTicket( nuevoTicket: Ticket ) {
+    generarNuevoTicket( ): Ticket {
+        const nuevoTicket: Ticket = new Ticket( String(this.data.length + 1), 0);
         this.data.push( nuevoTicket );
         this.actualizarArchivoData();
+
+        return nuevoTicket;
     }
 
     atenderTicket( ticketPorAtender: Ticket ) {
